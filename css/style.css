@@ -224,7 +224,7 @@ header .info button {
 }
 
 .circle-image {
-    background-image: url(/assets/photo-glass.jpg);
+    background-image: url(../assets/photo-glass.jpg);
     background-position: center;
     background-size: cover;
 
@@ -285,7 +285,7 @@ header .info button {
     border: 1px solid var(--gold-details-color);
     border-radius: 50%;
 
-    background-image: url(/assets/tinto-wine.png);
+    background-image: url(../assets/tinto-wine.png);
     background-position: center;
     background-size:cover;
 }
@@ -386,7 +386,7 @@ header .info button {
     border: 1px solid var(--gold-details-color);
     border-radius: 50%;
 
-    background-image: url(/assets/white-wine.png);
+    background-image: url(../assets/white-wine.png);
     background-position: center;
     background-size:cover;
 
@@ -483,7 +483,7 @@ header .info button {
     border: 1px solid var(--gold-details-color);
     border-radius: 50%;
 
-    background-image: url(/assets/rose-wine.png);
+    background-image: url(../assets/rose-wine.png);
     background-position: center;
     background-size:cover;
 
