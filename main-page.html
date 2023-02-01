@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BevApp - Muniv 🍷</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Poppins&display=swap');     
+            @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Poppins&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+        </style>
+    </head>
+    <body>
+        <section id="main-page-1">
+            <header>
+                <div class="logo-muniv">
+                    <img src="/assets/Design sem nome.png" alt="logo uva"> 
+                    <div class="bar"></div>
+                    <a href="main-page.html">Muniv</a>
+                </div>
+
+                <div class="info">
+                    <button onclick="window.open('quem-somos.html')">Quem somos</button>
+                </div>
+            </header>
+
+            <div class="mp-background">
+                <img src="/assets/fundo-rolhas.jpg" alt="background main page">
+            </div>
+
+            <div class="circle-image"></div>
+
+            <div class="content">                
+                <h2 align="center">
+                    <span> Você Fica perdido sem saber quais são os tipos de vinhos existentes?
+                    Tem dificuldade em escolher o rótulo baseado nas características que ele apresenta? </span>  <br> <br>
+                    Então você precisa compreender as diferenças entre cada tipo de vinho e de que maneira elas interferem nas cores, sabores, texturas e aromas da bebida.
+                    Afinal, desde o tipo de uva escolhido até a degustação final, o processo de produção e escolha dos vinhos é minucioso e repleto de experiências únicas.
+                </h2>
+            </div>            
+        </section>  
+        <section id="main-page-2">
+            <div class="mp-background">
+                <img src="/assets/fundo-rolhas.jpg" alt="background main page">
+            </div>
+            <div class="content-tinto">
+                <div class="image-tinto"></div>
+                <div class="info-tinto">
+                    <h2> O Vinho <span> Tinto </span> </h2>
+                    <p>
+                        Este vinho é resultante da extração de uvas tintas.   
+                        Sua coloração provém do trabalho feito com as cascas das uvas, que descansam com o mosto da mesma. 
+                        Este processo chama-se maceração e  dará ao vinho suas  principais características. 
+                        A intensidade de cor e sabor que o vinho terá quando estiver pronto, 
+                        está devidamente ligada  a dois fatores básicos: O tipo da uva que será usada para fazer a bebida e o tempo de maceração das cascas no mosto.
+                        Por haver uma enorme variedade de uvas tintas, os vinhos derivados destas uvas podem ter estilos muito diferentes, com temperatura de serviço bastante ampla: entre 14ºC e 16ºC para Tintos leves e 16ºC a 18ºC para médios a encorpados.
+                    </p>
+                </div>
+            </div>
+
+            <div class="tipos-tinto">
+                <h1>classificação dos tipos Tinto</h1>
+                <div class="links"> 
+
+                    <button class="corpo-leve" onclick="openModalCorpoLeve()">
+                        <a href="#janela-modal-tcl">Tinto Corpo Leve</a>
+                    </button>
+                        <button class="corpo-medio" onclick="openModalCorpoMedio()">
+                           <a href="#janela-modal-tcm">Tinto corpo medio</a>
+                        </button>
+                            <button class="encorpado" onclick="openModalEncorpado()">
+                                <a href="#janela-modal-tencp">Tinto encorpado</a>
+                            </button>
+                </div>               
+            </div>
+        <!-- ------------------------- MODAIS TINTO -------------------------------->  
+            <div class="janela-modal-tcl" id="janela-modal-tcl">
+                <div id="modal-tcl" class="modal-tcl">
+                    <h1>Tinto de Corpo Leve</h1>
+                    <p>
+                        Esse vinho não necessita de tempo de envelhecimento. 
+                        Geralmente são vinhos com aromas e sabores de frutas e vegetais bem frescos e de tonalidade rubi escura. 
+                        Devem ser degustados enquanto jovens, preferencialmente até o 2º ano de sua elaboração. <br><br>Devem ser preferencialmente servidos levemente refrescados (15ºC).
+                    </p>
+                    <button>
+                        <a href="https://conchaytoro.com/pt-pt/vinos/frontera-pinot-noir/" target="_blank">Saiba mais</a>
+                    </button>
+                </div>
+            </div> 
+
+            <div class="janela-modal-tcm" id="janela-modal-tcm">
+                <div class="modal-tcm" id="modal-tcm">
+                    <h1>Tinto de Corpo Médio</h1>
+                    <p>
+                        Esse tipo de vinho, permanece por no máximo 6 meses em tonéis de carvalho. 
+                        Deste modo, se destacam por apresentar aromas e sabores de frutas vermelhas e baunilha, além de suas cores com tons claretes, 
+                        resultado do tempo de permanência nos tonéis. <br> <br> Devem ser degustados de imediato ou até com 5 anos de guarda, 
+                        e servidos entre 15ºC e 18ºC.
+                    </p>
+
+                    <button>
+                        <a href="https://conchaytoro.com/pt-pt/vinos/frontera-merlot/" target="_blank">Saiba mais</a>
+                    </button>
+                </div>
+            </div>
+
+            <div class="janela-modal-tencp" id="janela-modal-tencp">
+                <div class="modal-tencp" id="modal-tencp">
+                    <h1>Tinto Encorpado</h1>
+                    <p>
+                        Esse vinho é robusto e com grande estrutura de aromas e sabores na boca.  <br>
+                        Elegante, tem grande complexidade aromática devido ao seu envelhecimento que lembra especiarias, 
+                        frutas vermelhas maduras, baunilha, tabaco e cacau. Sua coloração é rubi claro. <br> <br> 
+                        Devem ser servidos entre 15ºC e 18ºC.
+                    </p>
+                    
+                    <button>
+                        <a href="https://conchaytoro.com/pt-pt/vinos/frontera-malbec/" target="_blank">Saiba mais</a>
+                    </button>
+                </div>
+            </div>
+        <!-- ------------------------- MODAIS TINTO -------------------------------->  
+                       
+            <div class="content-white">
+                <div class="info-white">
+                    <h2>O Vinho <span> Branco </span> </h2>
+                    <p>
+                        Enganam-se os que acham que vinho branco tem que ser feito com uva branca, inclusive existem alguns destes vinhos que são extraídos de uvas tintas. <br> 
+                        O método de produção é similar ao do vinho tinto, a grande diferença é que as cascas são separadas do mosto assim que são prensadas, para que este não adquira as características provenientes das cascas.  <br>
+                        As uvas são prensadas de forma suave para que o suco seja retirado sem esmagar suas cascas e sementes. São também mantidas em temperaturas mais baixas para obterem um sabor leve e frutado.
+                        Com base em sua composição, para que você tenha uma melhor apreciação do sabor, é indicável que seja servido numa temperatura mais baixa que os vinhos tinto e rosé (entre 6ºC e 12ºC).   
+                    </p>
+                </div>
+                <div class="image-white"></div>
+            </div>
+            <div class="tipos-branco">
+                <h1>classificação de Vinhos Brancos</h1>
+                <div class="links">
+
+                    <button class="jovem-frutado" onclick="openModalBrancoFrutado()">
+                        <a href="#janela-modal-bjf">Jovem Frutado</a>
+                    </button>
+                        <button class="maduro" onclick="openModalBrancoMaduro()">
+                            <a href="#janela-modal-bm">Maduro</a> 
+                        </button>
+                </div>               
+            </div>
+
+        <!-- ------------------------- MODAIS BRANCO --------------------------------> 
+            <div class="janela-modal-bjf" id="janela-modal-bjf">
+                <div class="modal-bjf" id="modal-bjf">
+                    <h1>Branco Jovem Frutado</h1>
+                    <p>
+                        Vinho leve e elegante, com sua cor levemente amarelada e aroma de frutas tropicais frescas e vegetais. <br> 
+                        Paladar delicado e de leve permanência na boca, além de levemente refrescante. <br> <br> Devem ser de consumo rápido, quanto mais jovem, mais agradável será.
+                    </p>
+
+                    <button>
+                        <a href="https://conchaytoro.com/pt-pt/vinos/frontera-sauvignon-blanc/" target="_blank">Saiba mais</a>
+                    </button>
+                </div>
+            </div>
+
+            <div class="janela-modal-bm" id="janela-modal-bm">
+                <div class="modal-bm" id="modal-bm">
+                    <h1>Branco Maduro</h1>
+                    <p>
+                        Vinhos encorpados, de cor amarelo-ouro, com sabores intensos e aromas de frutos tropicais maduros.<br>
+                        Possui um leve toque de baunilha e com sabor de longa permanência na boca.
+                    </p>
+
+                    <button>
+                        <a href="https://conchaytoro.com/pt-pt/vinos/frontera-chardonnay/" target="_blank">Saiba mais</a>
+                    </button>
+                </div>
+            </div>
+        <!-- ------------------------- MODAIS BRANCO -------------------------------->  
+         
+        
+            <div class="mp-background">
+                <img src="/assets/fundo-rolhas.jpg" alt="background main page">
+            </div>
+            <div class="content-rose">
+                <div class="image-rose"></div>
+                <div class="info-rose">
+                    <h2> O Vinho <span>Rose</span> </h2>
+                    <p>
+                        Segue a mesma técnica de produção dos outros vinhos, com a grande diferença de que este pode ser feito por três métodos: <br> <span>O tradicional</span>, onde
+                        as uvas são prensadas e mantidas por um período que varia entre 02 e 24 horas, sob temperatura controlada até que se obtenha o tom rosado. <br>
+                        O método <span>corte de vinho</span>, que consiste em uma mistura do vinho tinto já vinificado com o vinho branco. <br>
+                        E o método <span>sangria</span>, que consiste em antes da fermentação, retirar uma parte do mosto das uvas prensadas. <br><br>
+                        O vinho Rosé deve ser servido a uma temperatura em torno dos 8ºC, sendo uma excelente opção para ser apreciado na primavera e verão.
+                    </p>
+                </div>
+            </div>
+
+            <div class="tipos-rose">
+                <h1>classificação de Vinhos Rose</h1>
+                <div class="links">
+                    <button class="acido" onclick="openModalRoseAcido()">
+                        <a href="#janela-modal-ra">Rose Ácido</a>
+                    </button>
+                        <button class="leve" onclick="openModalRoseLeve()">
+                            <a href="#janela-modal-rl">Rose Leve</a>
+                        </button>
+                            <button class="frutado" onclick="openModalRoseFrutado()"> 
+                                <a href="#janela-modal-rf">Toque frutado</a>
+                            </button>
+                </div>               
+            </div>   
+            
+            <!-------------------- MODAIS VINHO ROSE ----------------------->
+            <div class="janela-modal-ra" id="janela-modal-ra">
+                <div class="modal-ra" id="modal-ra">
+                    <h1>Rosé Ácido</h1>
+                    <p>
+                        A acidez do vinho rosé é uma das principais características dessa bebida, 
+                        sendo um atributo que é muito influenciado pelas condições climáticas e de solo,
+                        o tipo da uva e o tempo de maceração na hora da produção.
+                    </p>
+
+                    <button>
+                        <a href="https://conchaytoro.com/pt-pt/vinos/rose-concha-y-toro/" target="_blank">Saiba mais</a>
+                    </button>
+                </div>
+            </div>
+
+            <div class="janela-modal-rl" id="janela-modal-rl">
+                <div class="modal-rl" id="modal-rl">
+                    <h1>Rosé Leve</h1>
+                    <p>
+                        Os vinhos rosés possuem bastante leveza e por isso são ótimos para harmonizar com vários pratos diferentes. 
+                        São indicados principalmente para temperaturas mais altas e refeições leves.
+                    </p>
+
+                    <button>
+                        <a href="https://conchaytoro.com/pt-pt/vinos/casillero-del-diablo-rose/" target="_blank">Saiba mais</a>
+                    </button>
+                </div>
+            </div>
+
+            <div class="janela-modal-rf" id="janela-modal-rf">
+                <div class="modal-rf" id="modal-rf">
+                    <h1>Rosé Frutado</h1>
+                    <p>
+                        A característica bem marcante deste tipo de vinho é seu sabor frutado e delicado, que somente os vinhos rosés possuem. 
+                        Eles trazem muita refrescância e suavidade, além de seus aromas bastante presentes. 
+                    </p>
+
+                    <button>
+                        <a href="https://conchaytoro.com/pt-pt/vinos/devils-collection-rose-2018/" target="_blank">Saiba mais</a>
+                    </button>
+                </div>
+            </div>
+            <!-------------------- MODAIS VINHO ROSE ----------------------->
+        </section>
+        
+        <section>
+            <div class="mp-background">
+                <img src="/assets/fundo-rolhas.jpg" alt="background main page">
+            </div>
+        </section>
+
+        <script src="script.js"></script>
+    </body>
+</html>

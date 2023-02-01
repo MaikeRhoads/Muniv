@@ -1,0 +1,1320 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+
+    --text-color: white;
+    --gold-details-color: rgba(231, 171, 121);
+    --brown-background-color: rgba(79, 44, 44, 0.5);
+    
+}
+
+:root {
+    font-family: Cinzel;
+    scroll-behavior: smooth;
+    color: var(--text-color);
+}
+
+/* -----------------------------------------------------------------------------------------*/
+/* ----------------------------------- Confirm-Page styles ----------------------------------- */
+/* -----------------------------------------------------------------------------------------*/
+
+
+body {
+    background-color: #4A2C2C;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+body .background {
+    position: absolute;
+    z-index: -1;
+    opacity: 50%;
+    overflow: hidden;
+    width: 100vw;
+    background-repeat: repeat;
+}
+
+header,
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+header .logo img{
+    opacity: 0;
+    animation: slow-appear 5s forwards;
+
+    margin-top: 2rem;
+    width: 40%;
+}
+
+
+
+main  .confirm {
+    opacity: 0;
+    animation: slow-appear 3s forwards;
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+}
+
+main .confirm h1 {   
+    margin-top: 2rem;
+    padding: 5%;
+    width: 60%;
+
+    font-size: 30px;
+
+    border-radius: 6px;
+    background-color: rgba(74, 44, 44, 0.5);
+
+    box-shadow: 0px 3px 15px 2px black;
+    /* border: 0.1px solid var(--gold-details-color);   --- borda da caixa de confirmacao de idade -- */
+}
+
+main .confirm .buttons {
+    opacity: 0;
+    animation: slow-appear 8s forwards;
+    
+    display: flex;
+    justify-content: center;
+    justify-content: space-between 2rem;
+    gap: 2rem;
+
+    padding: 1rem 0 0 0;  
+}
+
+main .confirm .buttons .accept,
+.deny {
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 0.5rem;
+
+    background-color: rgba(79, 44, 44, 0.5);
+    color: rgba(231, 171, 121);
+
+    font-family: Cinzel;
+}
+
+main .accept:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+main .deny:hover {
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+
+@keyframes slow-appear {
+     0% {
+        opacity: 0;
+     }
+
+     100% {
+        opacity: 1;
+     }
+}
+
+/* ---------------------------------------------------------------------------------------- */
+/* ----------------------------------- Confirm-Page styles ----------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+
+
+
+
+
+/* ---------------------------------------------------------------------------------------- */
+/* ----------------------------------- Main-Page styles ----------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+
+
+
+.mp-background {
+    position: absolute;
+    z-index: -1;
+    opacity: 50%;
+    overflow: hidden;
+    width: 100vw;
+    height: 150vh;
+
+}
+
+#main-page-1 {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+    align-items: center;
+
+    scroll-behavior: smooth;
+}
+
+#main-page-1 header {
+    display: flex;
+
+    position: static;
+    height: 10%;
+    width: 100vw;
+
+    padding-inline-end: 1rem;
+    justify-content: space-between;
+    align-items: center;
+
+
+    background-color: var(--brown-background-color);
+}
+
+#main-page-1 header .logo-muniv {
+    display: flex;
+    padding-left: 1rem;
+
+    align-items: baseline;
+
+    font-family: 'Julius Sans One';
+    font-size: 260%;
+}
+
+
+#main-page-1 header .logo-muniv a {
+    text-decoration: none;
+    color: white;
+}
+
+#main-page-1 header .logo-muniv .bar {
+    border: 0.3px solid var(--gold-details-color);
+    margin-right: 1rem;
+    height: 50px;
+}
+
+
+header .info {
+    display: flex;
+    margin-right: 2rem;
+}
+
+header .info button {
+    border: none;
+    color: var(--gold-details-color);
+    background-color: transparent;
+    font-family: 'Cinzel';
+}
+
+.content {
+    display: flex;
+
+    justify-content: center;
+    text-align: justify;
+
+    width: 90vw;
+    padding: 4rem;
+
+    background-color: rgba(79, 44, 44, 0.4);
+
+    border: 0.3px solid var(--gold-details-color);
+    border-radius: 6px;
+
+    margin-top: 20rem;
+}
+
+.circle-image {
+    background-image: url(/assets/photo-glass.jpg);
+    background-position: center;
+    background-size: cover;
+
+    border: 0.5px solid var(--gold-details-color);
+    height: 25rem;
+    width: 25rem;
+
+    border-radius: 50%;
+    margin-top: 8rem;
+
+    position: absolute;
+    z-index: 2;
+
+    
+}
+
+.content span {
+    font-size: 25px;
+}
+
+.content h2 {
+    font-size: 20px;
+    margin-top: 5rem;
+}
+
+#main-page-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(79, 44, 44, 0.2);
+
+}
+
+/* ---------------- VINHO TINTO ------------------ */
+
+#main-page-2 .content-tinto {   
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    text-align: justify;
+
+    border: 1px solid var(--gold-details-color);
+    background-color: var(--brown-background-color);
+    
+    border-radius: 200px 6px 6px 200px;
+
+    width: 90vw;
+    height: 25rem;
+
+
+}
+
+#main-page-2 .image-tinto{
+    height: 25rem;
+    width: 25rem;
+    border: 1px solid var(--gold-details-color);
+    border-radius: 50%;
+
+    background-image: url(/assets/tinto-wine.png);
+    background-position: center;
+    background-size:cover;
+}
+
+#main-page-2 .info-tinto {
+    width: 50%;
+
+    margin-right: 5rem;
+    font-size: 110%;
+}
+
+#main-page-2 .info-tinto span {
+    color: var(--gold-details-color);
+}
+
+.tipos-tinto {
+    border: 1px solid var(--gold-details-color);
+    border-radius: 6px;
+    color: var(--gold-details-color);
+    background-color: var(--brown-background-color);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.tipos-tinto .links {
+    margin-top: 1rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.tipos-tinto .links button {
+    border: none;
+    background: transparent;
+    position: relative;
+    color: white;
+    font-family: 'Cinzel';
+}
+
+.tipos-tinto .links button:hover {
+    cursor: pointer;
+}
+
+.tipos-tinto .links button:before {
+    content: "";
+    position: absolute;
+    background-color: var(--gold-details-color);
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.tipos-tinto .links button:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+/*     */
+
+
+
+/* ------------------- VINHO BRANCO  --------------------*/
+
+
+#main-page-2 .content-white {   
+    display: flex;
+
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    margin-top: 13rem;
+
+    border: 1px solid var(--gold-details-color);
+    background-color: var(--brown-background-color);
+    
+    border-radius: 6px 200px 200px 6px;
+
+    width: 90vw;
+    height: 25rem;
+
+}
+
+#main-page-2 .image-white{
+    height: 25rem;
+    width: 25rem;
+    border: 1px solid var(--gold-details-color);
+    border-radius: 50%;
+
+    background-image: url(/assets/white-wine.png);
+    background-position: center;
+    background-size:cover;
+
+}
+
+#main-page-2 .info-white{
+    width: 50%;
+
+    justify-content: center;
+    text-align: justify;
+
+    margin-left: 5rem;
+
+    font-size: 110%;
+}
+
+#main-page-2 .info-white span {
+    color: var(--gold-details-color);
+}
+
+.tipos-branco {
+    border: 1px solid var(--gold-details-color);
+    border-radius: 6px;
+    color: var(--gold-details-color);
+    background-color: var(--brown-background-color);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.tipos-branco .links {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.tipos-branco .links button {
+    border: none;
+    background: transparent;
+    position: relative;
+    color: white;
+    font-family: 'Cinzel';
+}
+
+.tipos-branco .links button:before {
+    content: "";
+    position: absolute;
+    background-color: var(--gold-details-color);
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.tipos-branco .links button:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+/* ---------------------- VINHO ROSE --------------------*/
+
+#main-page-2 .content-rose {   
+    display: flex;
+
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    margin-top: 13rem;
+
+    border: 1px solid var(--gold-details-color);
+    background-color: var(--brown-background-color);
+    
+    border-radius: 200px 6px 6px 200px;
+
+    width: 90vw;
+    height: 25rem;
+}
+
+#main-page-2 .image-rose{
+    height: 25rem;
+    width: 25rem;
+    border: 1px solid var(--gold-details-color);
+    border-radius: 50%;
+
+    background-image: url(/assets/rose-wine.png);
+    background-position: center;
+    background-size:cover;
+
+}
+
+#main-page-2 .info-rose{
+    width: 50%;
+
+    justify-content: center;
+    text-align: justify;
+
+    margin-right: 5rem;
+
+    font-size: 110%;
+}
+
+#main-page-2 .info-rose span {
+    color: var(--gold-details-color);
+}
+
+.tipos-rose {                                                       /* Menu de informacoes de cada tipo*/
+    border: 1px solid var(--gold-details-color);
+    border-radius: 6px;
+    color: var(--gold-details-color);
+    background-color: var(--brown-background-color);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.tipos-rose .links {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.tipos-rose .links button {                                      
+    border: none;
+    background: transparent;
+    position: relative;
+    color: white;
+    font-family: 'Cinzel';
+}
+
+.tipos-rose .links button:before {                               /* Animacao da Underline */
+    content: "";
+    position: absolute;
+    background-color: var(--gold-details-color);
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.tipos-rose .links button:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+/* Hover de todos os botoes dos tipos */
+button:hover {      
+    cursor: pointer;
+}
+button a {
+    color: white;
+}
+
+/* -------------------- ESTILIZACAO DOS MODAIS ----------------- */
+
+/* -------------------- MODAIS TINTO CORPO LEVE ----------------- */
+.janela-modal-tcl {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 999;
+
+    background: #00000080;
+    backdrop-filter: blur(10px);
+
+}
+
+.janela-modal-tcl.open {
+    display: flex;
+}
+
+#modal-tcl {
+    width: 60%;
+    min-width: 450px;
+    min-height: 200px;
+
+    border: 1px solid var(--gold-details-color);
+    border-radius: 8px;
+    background-color: var(--brown-background-color);
+
+    text-align: center;
+    padding: 2rem;
+
+    font-size: 24px;
+    color: var(--gold-details-color);
+}
+
+#modal-tcl p {
+    font-size: 18px;
+    color: white;
+}
+
+#modal-tcl button {
+    position:relative;
+    width: fit-content;
+    border-radius: 3px;
+    background: transparent;
+    border: none;
+
+    margin-top: 2rem;
+}
+
+#modal-tcl button a {
+    color: var(--gold-details-color);
+    font-size: 20px;
+    font-family: 'Cinzel';
+}
+
+#modal-tcl button a:before {
+    content: "";
+    position: absolute;
+    background-color: var(--gold-details-color);
+    width: 100%;
+    height: 1px;
+    bottom:0;
+    left: 0;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#modal-tcl button a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+/* -------------------- MODAIS TINTO CORPO LEVE ----------------- */
+/* --------------------                         ----------------- */
+/* -------------------- MODAIS TINTO CORPO MEDIO ----------------- */
+
+.janela-modal-tcm {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 999;
+
+    background: #00000080;
+    backdrop-filter: blur(10px);
+}
+
+.janela-modal-tcm.open {
+    display: flex;
+}
+
+
+#modal-tcm {
+    width: 60%;
+    min-width: 450px;
+    min-height: 200px;
+
+    border: 1px solid var(--gold-details-color);
+    border-radius: 8px;
+    background-color: var(--brown-background-color);
+
+    text-align: center;
+    padding: 2rem;
+
+    font-size: 24px;
+    color: var(--gold-details-color);
+}
+
+#modal-tcm p {
+    font-size: 18px;
+    color: white;
+}
+
+#modal-tcm button {
+    position:relative;
+    width: fit-content;
+    border-radius: 3px;
+    background: transparent;
+    border: none;
+
+    margin-top: 2rem;
+}
+
+#modal-tcm button a {
+    color: var(--gold-details-color);
+    font-size: 20px;
+    font-family: 'Cinzel';
+}
+
+#modal-tcm button a:before {
+    content: "";
+    position: absolute;
+    background-color: var(--gold-details-color);
+    width: 100%;
+    height: 1px;
+    bottom:0;
+    left: 0;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#modal-tcm button a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+/* -------------------- MODAIS TINTO CORPO MEDIO ----------------- */
+/* --------------------                         ----------------- */
+/* -------------------- MODAIS TINTO ENCORPADO ----------------- */
+
+.janela-modal-tencp {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 999;
+
+    background: #00000080;
+    backdrop-filter: blur(10px);
+}
+
+.janela-modal-tencp.open {
+    display: flex;
+}
+
+
+#modal-tencp {
+    width: 60%;
+    min-width: 450px;
+    min-height: 200px;
+
+    border: 1px solid var(--gold-details-color);
+    border-radius: 8px;
+    background-color: var(--brown-background-color);
+
+    text-align: center;
+    padding: 2rem;
+
+    font-size: 24px;
+    color: var(--gold-details-color);
+}
+
+#modal-tencp p {
+    font-size: 18px;
+    color: white;
+}
+
+#modal-tencp button {
+    position:relative;
+    width: fit-content;
+    border-radius: 3px;
+    background: transparent;
+    border: none;
+
+    margin-top: 2rem;
+}
+
+#modal-tencp button a {
+    color: var(--gold-details-color);
+    font-size: 20px;
+    font-family: 'Cinzel';
+}
+
+#modal-tencp button a:before {
+    content: "";
+    position: absolute;
+    background-color: var(--gold-details-color);
+    width: 100%;
+    height: 1px;
+    bottom:0;
+    left: 0;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#modal-tencp button a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+/* -------------------- MODAIS TINTO ENCORPADO ----------------- */
+/* --------------------                         ----------------- */
+/* -------------------- MODAIS BRANCO JOVEM FRUTADO ----------------- */
+
+.janela-modal-bjf {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 999;
+
+    background: #00000080;
+    backdrop-filter: blur(10px);
+}
+
+.janela-modal-bjf.open {
+    display: flex;
+}
+
+
+#modal-bjf {
+    width: 60%;
+    min-width: 450px;
+    min-height: 200px;
+
+    border: 1px solid var(--gold-details-color);
+    border-radius: 8px;
+    background-color: var(--brown-background-color);
+
+    text-align: center;
+    padding: 2rem;
+
+    font-size: 24px;
+    color: var(--gold-details-color);
+}
+
+#modal-bjf p {
+    font-size: 18px;
+    color: white;
+}
+
+#modal-bjf button {
+    position:relative;
+    width: fit-content;
+    border-radius: 3px;
+    background: transparent;
+    border: none;
+
+    margin-top: 2rem;
+}
+
+#modal-bjf button a {
+    color: var(--gold-details-color);
+    font-size: 20px;
+    font-family: 'Cinzel';
+}
+
+#modal-bjf button a:before {
+    content: "";
+    position: absolute;
+    background-color: var(--gold-details-color);
+    width: 100%;
+    height: 1px;
+    bottom:0;
+    left: 0;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#modal-bjf button a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+/* -------------------- MODAIS BRANCO JOVEM FRUTADO ----------------- */
+/* --------------------                            ----------------- */
+/* ------------------------MODAIS BRANCO MADURO ----------------- */
+
+.janela-modal-bm {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 999;
+
+    background: #00000080;
+    backdrop-filter: blur(10px);
+}
+
+.janela-modal-bm.open {
+    display: flex;
+}
+
+
+#modal-bm {
+    width: 60%;
+    min-width: 450px;
+    min-height: 200px;
+
+    border: 1px solid var(--gold-details-color);
+    border-radius: 8px;
+    background-color: var(--brown-background-color);
+
+    text-align: center;
+    padding: 2rem;
+
+    font-size: 24px;
+    color: var(--gold-details-color);
+}
+
+#modal-bm p {
+    font-size: 18px;
+    color: white;
+}
+
+#modal-bm button {
+    position:relative;
+    width: fit-content;
+    border-radius: 3px;
+    background: transparent;
+    border: none;
+
+    margin-top: 2rem;
+}
+
+#modal-bm button a {
+    color: var(--gold-details-color);
+    font-size: 20px;
+    font-family: 'Cinzel';
+}
+
+#modal-bm button a:before {
+    content: "";
+    position: absolute;
+    background-color: var(--gold-details-color);
+    width: 100%;
+    height: 1px;
+    bottom:0;
+    left: 0;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#modal-bm button a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+/* -------------------- MODAIS BRANCO MADURO ----------------- */
+/* --------------------                      ----------------- */
+/* ---------------------- MODAIS ROSE ACIDO ----------------- */
+
+.janela-modal-ra {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 999;
+
+    background: #00000080;
+    backdrop-filter: blur(10px);
+}
+
+.janela-modal-ra.open {
+    display: flex;
+}
+
+
+#modal-ra {
+    width: 60%;
+    min-width: 450px;
+    min-height: 200px;
+
+    border: 1px solid var(--gold-details-color);
+    border-radius: 8px;
+    background-color: var(--brown-background-color);
+
+    text-align: center;
+    padding: 2rem;
+
+    font-size: 24px;
+    color: var(--gold-details-color);
+}
+
+#modal-ra p {
+    font-size: 18px;
+    color: white;
+}
+
+#modal-ra button {
+    position:relative;
+    width: fit-content;
+    border-radius: 3px;
+    background: transparent;
+    border: none;
+
+    margin-top: 2rem;
+}
+
+#modal-ra button a {
+    color: var(--gold-details-color);
+    font-size: 20px;
+    font-family: 'Cinzel';
+}
+
+#modal-ra button a:before {
+    content: "";
+    position: absolute;
+    background-color: var(--gold-details-color);
+    width: 100%;
+    height: 1px;
+    bottom:0;
+    left: 0;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#modal-ra button a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+/* ---------------------- MODAIS ROSE ACIDO ----------------- */
+/* --------------------                      ----------------- */
+/* ---------------------- MODAIS ROSE LEVE ----------------- */
+
+
+.janela-modal-rl {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 999;
+
+    background: #00000080;
+    backdrop-filter: blur(10px);
+}
+
+.janela-modal-rl.open {
+    display: flex;
+}
+
+
+#modal-rl {
+    width: 60%;
+    min-width: 450px;
+    min-height: 200px;
+
+    border: 1px solid var(--gold-details-color);
+    border-radius: 8px;
+    background-color: var(--brown-background-color);
+
+    text-align: center;
+    padding: 2rem;
+
+    font-size: 24px;
+    color: var(--gold-details-color);
+}
+
+#modal-rl p {
+    font-size: 18px;
+    color: white;
+}
+
+#modal-rl button {
+    position:relative;
+    width: fit-content;
+    border-radius: 3px;
+    background: transparent;
+    border: none;
+
+    margin-top: 2rem;
+}
+
+#modal-rl button a {
+    color: var(--gold-details-color);
+    font-size: 20px;
+    font-family: 'Cinzel';
+}
+
+#modal-rl button a:before {
+    content: "";
+    position: absolute;
+    background-color: var(--gold-details-color);
+    width: 100%;
+    height: 1px;
+    bottom:0;
+    left: 0;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#modal-rl button a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+/* ---------------------- MODAIS ROSE LEVE ----------------- */
+/* --------------------                      ----------------- */
+/* ---------------------- MODAIS ROSE FRUTADO ----------------- */
+
+.janela-modal-rf {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 999;
+
+    background: #00000080;
+    backdrop-filter: blur(10px);
+}
+
+.janela-modal-rf.open {
+    display: flex;
+}
+
+
+#modal-rf {
+    width: 60%;
+    min-width: 450px;
+    min-height: 200px;
+
+    border: 1px solid var(--gold-details-color);
+    border-radius: 8px;
+    background-color: var(--brown-background-color);
+
+    text-align: center;
+    padding: 2rem;
+
+    font-size: 24px;
+    color: var(--gold-details-color);
+}
+
+#modal-rf p {
+    font-size: 18px;
+    color: white;
+}
+
+#modal-rf button {
+    position:relative;
+    width: fit-content;
+    border-radius: 3px;
+    background: transparent;
+    border: none;
+
+    margin-top: 2rem;
+}
+
+#modal-rf button a {
+    color: var(--gold-details-color);
+    font-size: 20px;
+    font-family: 'Cinzel';
+}
+
+#modal-rf button a:before {
+    content: "";
+    position: absolute;
+    background-color: var(--gold-details-color);
+    width: 100%;
+    height: 1px;
+    bottom:0;
+    left: 0;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#modal-rf button a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+/* ---------------------- MODAIS ROSE FRUTADO ----------------- */
+/* -------------------- ESTILIZACAO DOS MODAIS ----------------- */
+
+
+
+/* -------------------- PAGE QUEM SOMOS  ----------------- */
+
+.quem-somos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quem-somos .logo img {
+    margin-top: 2rem;
+    width: 243px;
+    height: 150px;
+}
+
+.quem-somos .content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 100%;
+}
+
+.quem-somos .content h1 {
+    color: var(--gold-details-color);
+    margin-bottom: 2rem;
+}
+
+.content span {
+    color: var(--gold-details-color);
+}
+
+.credits-title {
+    color: var(--gold-details-color);
+    margin-top: 4rem;
+    border: 1px solid white;
+    padding: 0.5rem;
+    border-radius: 6px;
+}
+
+.credits {
+    display: flex;  
+    width: 90vw;
+    gap: 1rem;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.credits h2 {
+    color: var(--gold-details-color);
+    margin-bottom: 0.5rem;
+}
+
+.bruno,
+.erick,
+.joao,
+.lua,
+.michael {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    border: 0.5px solid var(--gold-details-color);
+    border-radius:  6px;
+    padding: 0.5rem;
+    width: 25%;
+   
+
+
+}
+
+
+
+
+
+
